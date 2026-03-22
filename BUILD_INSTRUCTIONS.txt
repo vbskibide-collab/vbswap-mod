@@ -1,0 +1,41 @@
+# VB-Swap Mod - Build Instructions
+
+## What You Need
+1. Java 21 or higher installed
+2. Internet connection (to download Gradle and dependencies)
+
+## How to Build
+
+### On Windows:
+1. Open Command Prompt
+2. Navigate to this folder
+3. Run: gradlew.bat build
+4. Find your mod JAR in: build\libs\vbswap-1.0.0.jar
+
+### On Linux/Mac:
+1. Open Terminal
+2. Navigate to this folder
+3. Run: ./gradlew build
+4. Find your mod JAR in: build/libs/vbswap-1.0.0.jar
+
+## Installation After Building
+1. Install Fabric Loader for Minecraft 1.21.11
+2. Install Fabric API mod
+3. Copy vbswap-1.0.0.jar to your .minecraft/mods/ folder
+4. Launch Minecraft!
+
+## Using the Mod
+- Type .vb-swap in chat while holding an item
+- It will swap with your offhand
+- Works even in GUIs!
+
+## Troubleshooting
+- If build fails, make sure Java 21+ is installed
+- Check that you have internet connection for downloading dependencies
+- For different Minecraft versions, edit gradle.properties
+
+## Need Different Minecraft Version?
+Edit gradle.properties and change:
+- minecraft_version=1.20.1 (to your version)
+- yarn_mappings (find matching version on fabricmc.net)
+- fabric_version (find matching version on fabricmc.net)

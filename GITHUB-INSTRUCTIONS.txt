@@ -1,0 +1,90 @@
+================================================================
+HOW TO GET YOUR MOD JAR USING GITHUB (NO BUILDING REQUIRED!)
+================================================================
+
+STEP 1: CREATE A GITHUB ACCOUNT
+--------------------------------
+1. Go to: https://github.com/signup
+2. Create a free account (it's quick!)
+3. Verify your email
+
+
+STEP 2: CREATE A NEW REPOSITORY
+--------------------------------
+1. Once logged in, click the "+" in the top right
+2. Click "New repository"
+3. Name it: vbswap-mod
+4. Make it Public (required for free Actions)
+5. DO NOT initialize with README
+6. Click "Create repository"
+
+
+STEP 3: UPLOAD YOUR FILES
+--------------------------
+METHOD A - Using the website (easiest):
+1. On your new repository page, click "uploading an existing file"
+2. Drag ALL the files from the vbswap folder into the upload area
+   (Make sure to include the .github folder!)
+3. Write a commit message like "Initial commit"
+4. Click "Commit changes"
+
+METHOD B - Using Git (if you know how):
+1. Extract the ZIP to a folder
+2. Open terminal/command prompt in that folder
+3. Run these commands:
+   git init
+   git add .
+   git commit -m "Initial commit"
+   git remote add origin https://github.com/YOUR-USERNAME/vbswap-mod.git
+   git branch -M main
+   git push -u origin main
+
+
+STEP 4: LET GITHUB BUILD YOUR MOD
+----------------------------------
+1. After uploading, GitHub will automatically start building!
+2. Click on the "Actions" tab at the top of your repository
+3. You'll see a workflow running (yellow dot = building, green check = done!)
+4. Wait 2-3 minutes for it to finish
+
+
+STEP 5: DOWNLOAD YOUR JAR FILE
+-------------------------------
+1. Once the green checkmark appears, click on the workflow run
+2. Scroll down to "Artifacts" section
+3. Click "vbswap-mod" to download a ZIP
+4. Extract the ZIP - inside you'll find: vbswap-1.0.0.jar
+5. That's your mod! Copy it to .minecraft/mods/
+
+
+EVERY TIME YOU WANT TO REBUILD:
+--------------------------------
+- Just go to Actions tab
+- Click "Build VB-Swap Mod" on the left
+- Click "Run workflow" button
+- Click the green "Run workflow" button
+- Wait for it to finish and download the new JAR!
+
+
+TROUBLESHOOTING:
+----------------
+Q: Build failed with a red X?
+A: Click on it to see the error. Usually means a file wasn't uploaded correctly.
+
+Q: Don't see the Actions tab?
+A: Make sure your repository is Public (not Private)
+
+Q: Can't find the .github folder?
+A: On Windows, you need to show hidden files/folders first
+
+Q: Artifacts expired?
+A: Just run the workflow again - it rebuilds fresh!
+
+
+NEED HELP?
+----------
+If you get stuck, let me know which step you're on and what error you're seeing!
+
+================================================================
+THAT'S IT! YOU NOW HAVE YOUR MOD JAR WITHOUT BUILDING LOCALLY!
+================================================================

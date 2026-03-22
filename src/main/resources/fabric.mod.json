@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "vbswap",
+  "version": "1.0.0",
+  "name": "VB-Swap",
+  "description": "Swap mainhand and offhand items using .vb-swap command",
+  "authors": [
+    "VBSwap"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/vbswap/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.vbswap.VBSwapMod"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "minecraft": ">=1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
